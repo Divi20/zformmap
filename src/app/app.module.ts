@@ -10,6 +10,7 @@ import { ContentComponent } from './shared/content/content.component';
 import { MapComponent } from './components/map/map.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FormsCompComponent } from './components/forms-comp/forms-comp.component';
 
 
 @NgModule({

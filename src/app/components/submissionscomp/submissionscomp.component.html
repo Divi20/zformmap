@@ -5,7 +5,7 @@
     <div class="base-layout">
       <div class = "row">
       <div class="col-3">
-        <input class="form-control input-style" placeholder="&#xF002; Search" />
+        <input class="form-control input-style" placeholder="&#xF002; Search" [(ngModel)]="searchVal" #searchVal1="ngModel" (ngModelChange)="searchData()" />
       </div>
       <div class="col-2">
       <select class="input-style" >
@@ -15,7 +15,7 @@
       </select>
       </div>
       <div class="col-2">
-      <select class="input-style" aria-placeholder="Select Status" >
+      <select class="input-style" aria-placeholder="Select Status" [(ngModel)]="statusVal" #statusVal1="ngModel" (change)="filterData()">
         <option value="">Select Status</option>
         <option value = "Complete">Complete</option>
         <option value = "Uncomplete">Uncomplete</option>
@@ -23,14 +23,14 @@
       </select>
       </div>
       <div class="col-2">
-      <input type="date" class="input-style">
+      <input type="date" class="input-style" [(ngModel)]="dateVal" #dateVal1="ngModel" (change)="filterData()">
       </div>
       <div class="col-3 maplistparent">
         <span style="margin-right: 20px;"><button class="btn-style-map" (click)="setExportType('Map')" [ngStyle]="exportOptionVal == 'Map'?{'background-color': '#1976d2'} : {'background-color': 'transparent'}">Map</button><button class="btn-style-list" (click)="setExportType('List')" [ngStyle]="exportOptionVal == 'List'?{'background-color': '#1976d2'} : {'background-color': 'transparent'}">List</button></span>
    
        <button style="  background : transparent !important;
        color: rgb(0, 106, 255);
-       border :  none;">Export <i class="bi bi-file-earmark-arrow-down-fill"></i></button>
+       border :  none;" (click)="downLoad()">Export <i class="bi bi-file-earmark-arrow-down-fill"></i></button>
         </div>
     </div>
     </div>
@@ -51,7 +51,7 @@
               <span style="font-size: 14px;"><label>To : </label>
               {{mapDetail.To}}</span>
               <span style="color  : red"><label>Due Date : </label>
-              {{mapDetail.DueDate}}</span>
+              {{mapDetail.DueDate | date:"dd, MMMM"}}</span>
 
             </div>
           </div>
