@@ -20,7 +20,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)],
+    RouterModule.forRoot(routes, {useHash: true})
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
