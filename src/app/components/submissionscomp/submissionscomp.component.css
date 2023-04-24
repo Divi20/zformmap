@@ -1,0 +1,82 @@
+.base-layout{
+    padding: 1%;
+}
+
+.input-style{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+}
+
+
+label{
+    color : #bcbaba;
+    font-size: 14px;
+}
+.btn-style-map{
+    padding: 0.375rem 0.75rem;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    background-color:transparent;
+}
+
+
+.btn-style-list{
+    padding: 0.375rem 0.75rem;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    border-left: none;
+    border: 1px solid #ced4da;
+    background-color:transparent;
+}
+
+
+.export-class{
+    background : transparent !important;
+    color: rgb(0, 106, 255);
+    border :  none;
+}
+.maplistparent{
+    display: flex;
+    justify-content: flex-end;
+}
+.greenStyle{
+    margin-left : auto ; 
+    background-color: rgba(148, 228, 123, 0.58);
+    border: 2px solid green ; 
+    font-size: 14px; 
+    padding: 1%; 
+    border-radius: 0.35em; 
+    color : green
+}
+
+.redStyle{
+    margin-left : auto ; 
+    background-color: rgba(232, 106, 106, 0.695);
+    border: 2px solid red ; 
+    font-size: 14px; 
+    padding: 1%; 
+    border-radius: 0.35em; 
+    color : red
+}
+
+.greyStyle{
+    margin-left : auto ; 
+    background-color: #5b6d7f8d;
+    border: 2px solid #4d5961 ; 
+    font-size: 14px; 
+    padding: 1%; 
+    border-radius: 0.35em; 
+    color : #4d5961
+}
