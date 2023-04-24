@@ -9,6 +9,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ContentComponent } from './shared/content/content.component';
 import { MapComponent } from './components/map/map.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [ 

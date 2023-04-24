@@ -11,7 +11,7 @@ import { MapComponent } from './components/map/map.component';
 
 const routes: Routes = [
   {path : '', component : SubmissionscompComponent},
-  {path : '#/submissions', component : SubmissionscompComponent},
+  {path : '/#/submissions', component : SubmissionscompComponent},
 ];
 
 @NgModule({
